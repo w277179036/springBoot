@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  context-path: /springBoot
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.wzq.model
